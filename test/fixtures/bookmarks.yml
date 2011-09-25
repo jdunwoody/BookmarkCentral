@@ -1,13 +1,15 @@
 # Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
 
 one:
-  url: MyString
   title: MyString
-  last_visited: 2011-09-24 21:56:52
-  num_visits: 1
+  url: MyString
+  last_visited: 2011-09-25 14:09:45
+  times_visited: 1
+  label: 
 
 two:
-  url: MyString
   title: MyString
-  last_visited: 2011-09-24 21:56:52
-  num_visits: 1
+  url: MyString
+  last_visited: 2011-09-25 14:09:45
+  times_visited: 1
+  label: 

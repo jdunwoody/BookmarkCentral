@@ -1,6 +1,8 @@
 BookmarkCentral::Application.routes.draw do
   resources :bookmarks
 
+  resources :labels
+
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
