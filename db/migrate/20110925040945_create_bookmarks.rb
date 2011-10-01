@@ -1,5 +1,5 @@
 class CreateBookmarks < ActiveRecord::Migration
-  def self.up
+  def change
     create_table :bookmarks do |t|
       t.string :title
       t.string :url
@@ -8,9 +8,5 @@ class CreateBookmarks < ActiveRecord::Migration
 
       t.timestamps
     end
-  end
-
-  def self.down
-    drop_table :bookmarks
   end
 end
