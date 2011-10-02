@@ -17,5 +17,9 @@
 	<b>Times visited:</b>
 	<%= @bookmark.times_visited %>
 </p>
+<p>
+	<b>Labels:</b>
+	<%= labels_for_bookmark(@bookmark) %>
+</p>
 <%= link_to 'Edit', edit_bookmark_path(@bookmark) %> |
 <%= link_to 'Back', bookmarks_path %> 

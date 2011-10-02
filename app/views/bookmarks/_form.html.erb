@@ -32,9 +32,7 @@
     <%= f.text_field :times_visited %>
   </div>
   <div class="field">
-    <%= f.label :label %>
-    <br />
-    <%= f.text_field :label_id %>
+  <%= select_tag('label', options_from_collection_for_select(Label.all, 'id', 'name')) %>
   </div>
   <div class="actions">
     <%= f.submit %>

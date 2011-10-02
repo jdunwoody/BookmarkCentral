@@ -1,3 +1,3 @@
 class Bookmark < ActiveRecord::Base
-  has_and_belongs_to_many :label
+  has_many :label
 end
