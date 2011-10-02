@@ -6,6 +6,6 @@ module BookmarksHelper
   end
   
   def labels_for_bookmark(bookmark)
-    Label.find_all_by_bookmark_id(bookmark_id)
+    Label.find_all_by_bookmark_id(bookmark.id)
   end
 end
