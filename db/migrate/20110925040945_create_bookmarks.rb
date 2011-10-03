@@ -5,6 +5,7 @@ class CreateBookmarks < ActiveRecord::Migration
       t.string :url
       t.datetime :last_visited
       t.integer :times_visited
+      t.references :label
 
       t.timestamps
     end
