@@ -1,0 +1,21 @@
+<h1>Listing clouds</h1>
+
+<table>
+  <tr>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @clouds.each do |cloud| %>
+  <tr>
+    <td><%= link_to 'Show', cloud %></td>
+    <td><%= link_to 'Edit', edit_cloud_path(cloud) %></td>
+    <td><%= link_to 'Destroy', cloud, confirm: 'Are you sure?', method: :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Cloud', new_cloud_path %>

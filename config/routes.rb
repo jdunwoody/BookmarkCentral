@@ -1,9 +1,11 @@
 BookmarkCentral::Application.routes.draw do
+  resources :clouds
   resources :bookmarks
   resources :labels
 
   match '/labels', :to => 'labels#index'
   match '/bookmarks', :to => 'bookmarks#index'
+  match '/clouds', :to => 'clouds#index'
   # The priority is based upon order of creation:
   # first created -> highest priority.
 

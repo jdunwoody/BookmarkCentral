@@ -11,13 +11,18 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20110925040945) do
+ActiveRecord::Schema.define(:version => 20111008112954) do
 
   create_table "bookmarks", :force => true do |t|
     t.string   "title"
     t.string   "url"
     t.datetime "last_visited"
     t.integer  "times_visited"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "clouds", :force => true do |t|
     t.datetime "created_at"
     t.datetime "updated_at"
   end
