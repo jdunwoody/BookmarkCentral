@@ -1,0 +1,5 @@
+if [[ `rvm list` == *1.9.2-p290-patched* ]]; then
+  rvm 1.9.2-p290-patched@global --create
+else
+  rvm 1.9.2-p290@newco --create
+fi

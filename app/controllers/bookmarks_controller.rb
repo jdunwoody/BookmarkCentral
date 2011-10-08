@@ -1,7 +1,10 @@
+require 'pry'
+
 class BookmarksController < ApplicationController
   # GET /bookmarks
   # GET /bookmarks.xml
   def index
+    binding.pry
     @bookmarks = Bookmark.all
 
     respond_to do |format|
